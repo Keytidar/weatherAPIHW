@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  background-color: #091833;
+}
+
+.widget_weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  width: 26.9rem;
+  height: 35rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+  padding: 1rem;
+  font-family: "Segoe UI";
+  color: #E6F0FA;
+}
+
+.widget_weather svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.weather_icon {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  margin-top: 4rem;
+}
+
+#city-name {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#temperature-span {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+#description-span {
+  font-size: 3rem;
+}
+
+.bottom_info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.flex_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.interact_menu {
+  margin-top: 5rem;
+}
+
+.interact_menu button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.interact_menu button:active {
+  scale: 95%;
+}
+
+
+/* Backgrounds for card depending on time */
+
+.day {
+  background-image: linear-gradient(
+  0deg,
+  hsl(197deg 75% 44%) 0%,
+  hsl(198deg 59% 60%) 20%,
+  hsl(197deg 65% 72%) 40%,
+  hsl(197deg 71% 76%) 60%,
+  hsl(197deg 71% 70%) 80%,
+  hsl(196deg 72% 64%) 100%
+  );
+}
+
+.day svg {
+  filter: drop-shadow(0px 8px 43px #FFC10A);
+}
+
+.night svg {
+  filter: drop-shadow(0px 5px 34px #D8D8D8);
+}
+
+.evening {
+  background-image: linear-gradient(
+    0deg,
+    hsl(3deg 47% 59%) 0%,
+    hsl(25deg 62% 69%) 20%,
+    hsl(301deg 23% 70%) 40%,
+    hsl(208deg 32% 57%) 60%,
+    hsl(207deg 44% 43%) 80%,
+    hsl(205deg 81% 29%) 100%
+  );
+}
+
+.night {
+  background-image: linear-gradient(
+    0deg,
+    hsl(196deg 100% 3%) 0%,
+    hsl(197deg 100% 4%) 4%,
+    hsl(199deg 100% 4%) 8%,
+    hsl(200deg 92% 5%) 13%,
+    hsl(200deg 93% 6%) 17%,
+    hsl(200deg 94% 6%) 21%,
+    hsl(201deg 89% 7%) 25%,
+    hsl(201deg 90% 8%) 29%,
+    hsl(203deg 86% 8%) 33%,
+    hsl(203deg 87% 9%) 37%,
+    hsl(204deg 84% 10%) 42%,
+    hsl(203deg 85% 10%) 46%,
+    hsl(205deg 82% 11%) 50%,
+    hsl(204deg 83% 12%) 54%,
+    hsl(205deg 84% 12%) 58%,
+    hsl(205deg 88% 13%) 63%,
+    hsl(205deg 88% 13%) 67%,
+    hsl(206deg 89% 14%) 71%,
+    hsl(206deg 92% 15%) 75%,
+    hsl(205deg 92% 15%) 79%,
+    hsl(206deg 95% 16%) 83%,
+    hsl(206deg 95% 16%) 87%,
+    hsl(206deg 98% 17%) 92%,
+    hsl(206deg 98% 17%) 96%,
+    hsl(206deg 100% 18%) 100%
+  );
+}
